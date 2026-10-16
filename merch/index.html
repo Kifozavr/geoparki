@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мерч I ♥ SHUGUR — Атлас геопарков ЮНЕСКО</title>
+<meta name="description" content="Мерч Атласа геопарков: коллекция I ♥ SHUGUR и вещи, вдохновлённые геологией. Концепция магазина — заказы пока не принимаются.">
+<meta name="theme-color" content="#EEF0EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101412" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Мерч I ♥ SHUGUR — Атлас геопарков ЮНЕСКО">
+<meta property="og:description" content="Мерч Атласа геопарков: коллекция I ♥ SHUGUR и вещи, вдохновлённые геологией. Концепция магазина — заказы пока не принимаются.">
+<meta property="og:url" content="https://geo-parki.ru/merch/">
+<meta property="og:site_name" content="Атлас геопарков ЮНЕСКО">
+<meta property="og:image" content="https://geo-parki.ru/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://geo-parki.ru/img/og.jpg">
+<link rel="canonical" href="https://geo-parki.ru/merch/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fonts/geologica-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../assets/atlas.css?v=0e66ae5a">
+<script>try{var t=localStorage.getItem('atlas-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<style>
+/* Мерч — стили страницы поверх общего assets/atlas.css */
+.m-logo{margin:12px 0 14px;line-height:0}
+.m-logo img{display:block;width:min(560px,100%);height:auto}
+.m-logo .lg-d{display:none}
+:root[data-theme="dark"] .m-logo .lg-l{display:none}
+:root[data-theme="dark"] .m-logo .lg-d{display:block}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .m-logo .lg-l{display:none}:root:not([data-theme="light"]) .m-logo .lg-d{display:block}}
+.cart-btn{flex:none;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--surface);padding:0 12px;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.cart-btn b{font-family:var(--mono);font-weight:500;font-size:12.5px;background:var(--accent);color:var(--accent-ink);border-radius:999px;min-width:20px;height:20px;display:inline-grid;place-items:center;padding:0 6px}
+.cart-btn:hover{border-color:var(--muted)}
+@media(max-width:640px){.cart-btn{order:1;padding:0 9px}.cart-btn .w{display:none}.m-spec{display:none}}
+.cart-btn svg{flex:none}
+@media(max-width:390px){.cart-btn{padding:0 6px;gap:4px}.cart-btn b{min-width:18px;height:18px;font-size:11.5px;padding:0 5px}.top .wrap{column-gap:6px}}
+/* карусель */
+.m-hero{position:relative;display:grid;grid-template-columns:1fr;min-height:420px;border-radius:var(--r);border:1px solid var(--line);overflow:hidden;transition:background-color .4s}
+@media(min-width:860px){.m-hero{grid-template-columns:1fr 1fr;min-height:470px}}
+.m-hero-copy{padding:34px 26px 90px;position:relative;z-index:1}
+@media(min-width:860px){.m-hero-copy{padding:48px 0 96px 44px}}
+.m-hero .mono{color:#2c5a48}
+.m-hero h2{font-size:clamp(34px,4.4vw,60px);line-height:1.02;letter-spacing:-.035em;font-weight:650;margin:18px 0 16px;color:#16201b}
+.m-hero p{font-family:var(--read);font-size:17px;line-height:1.5;color:#3d4b43;max-width:24em;margin:0 0 18px}
+.m-hero .btn.pri{background:#0E6B54;border-color:#0E6B54;color:#fff}
+.m-hero-art{position:relative;display:flex;align-items:center;justify-content:center;min-height:240px}
+.m-hero-art::before{content:"";position:absolute;width:min(400px,70%);aspect-ratio:1;border-radius:50%;border:1px solid rgba(40,70,55,.25);box-shadow:0 0 0 34px rgba(255,255,255,.18)}
+.m-hero-art svg{position:relative;width:min(420px,90%);height:auto;transform:rotate(-8deg);filter:drop-shadow(12px 20px 16px rgba(30,50,40,.18))}
+.m-spec{position:absolute;right:24px;top:22px;font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:#55665b;text-align:right;text-transform:uppercase}
+.m-bar{position:absolute;left:26px;right:24px;bottom:22px;display:flex;align-items:center;justify-content:space-between;z-index:2}
+@media(min-width:860px){.m-bar{left:44px}}
+.m-dots{display:flex;gap:8px}
+.m-dots button{width:26px;height:4px;border:0;padding:0;border-radius:2px;background:rgba(40,70,55,.3);cursor:pointer}
+.m-dots button[aria-pressed="true"]{width:48px;background:#0E6B54}
+.m-arr{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:#3d4b43}
+.m-arr button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(40,70,55,.35);background:rgba(255,255,255,.35);cursor:pointer;font-size:17px;color:#16201b}
+/* выгоды */
+.m-ben{display:grid;gap:0;border-bottom:1px solid var(--line);margin-top:6px}
+@media(min-width:760px){.m-ben{grid-template-columns:repeat(3,1fr)}}
+.m-ben>div{display:grid;grid-template-columns:30px 1fr;gap:10px;padding:16px 16px 16px 0;border-top:1px solid var(--line)}
+@media(min-width:760px){.m-ben>div{border-top:0}}
+.m-ben i{font-style:normal;font-size:20px;color:var(--accent);line-height:1.2}
+.m-ben b{font-weight:600;font-size:15px;display:block}
+.m-ben span{font-size:13.5px;color:var(--muted)}
+/* каталог */
+.m-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:18px}
+.m-tools .field{flex:1;min-width:180px;max-width:320px}
+.m-tools .field input,.m-tools .field select{height:38px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:0 12px;width:100%}
+.m-grid{display:grid;gap:18px 16px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+@media(max-width:520px){.m-grid{grid-template-columns:1fr 1fr;gap:16px 10px}}
+.m-card{position:relative;display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.m-pic{position:relative;display:block;aspect-ratio:1/1.13;border-radius:var(--r);overflow:hidden;background:#EEEFEC;border:1px solid var(--line)}
+.m-pic img,.m-pic svg{width:100%;height:100%;display:block;object-fit:contain;transition:transform .4s ease}
+.m-pic img{object-fit:cover}
+.m-card:hover .m-pic img,.m-card:hover .m-pic svg{transform:scale(1.04)}
+.m-card .tags{left:10px;top:10px}
+.m-card .tag{background:rgba(249,250,247,.9);color:#16201b}
+.m-card .tag.sh{background:#E10600;color:#fff}
+.m-fav{position:absolute;right:8px;top:8px;z-index:2;width:34px;height:34px;border-radius:50%;border:0;background:rgba(249,250,247,.85);font-size:17px;cursor:pointer;color:#16201b;line-height:1}
+.m-fav[aria-pressed="true"]{color:#E10600}
+.m-card .mono{margin-top:10px;font-size:10.5px}
+.m-card h3{margin:3px 0 2px;font-size:16px;font-weight:600;letter-spacing:-.01em;line-height:1.2}
+.m-card p{margin:0;font-size:13px;color:var(--muted);line-height:1.35}
+.m-price{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-family:var(--mono);font-size:14px}
+.m-price .add{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-size:17px;line-height:1}
+.m-price .add:hover{border-color:var(--accent);color:var(--accent)}
+/* история */
+.m-story{background:#183F32;color:#F1F3EA}
+.m-story .wrap{display:grid;gap:28px}
+@media(min-width:900px){.m-story .wrap{grid-template-columns:1fr 1fr;gap:56px;align-items:center}}
+.m-story svg{display:block;width:100%;height:auto;border-radius:var(--r)}
+.m-story .mono{color:#A9C2B3}
+.m-story h2{font-size:clamp(28px,3.6vw,42px);line-height:1.05;letter-spacing:-.025em;font-weight:650;margin:12px 0 14px}
+.m-story p{font-family:var(--read);font-size:17px;line-height:1.55;color:#CFDACF;margin:0 0 16px;max-width:30em}
+.m-story a{color:#F1F3EA;text-underline-offset:4px}
+/* условия */
+.m-help{display:grid;gap:26px}
+@media(min-width:900px){.m-help{grid-template-columns:1fr 1.3fr;gap:56px}}
+.m-help .lead{font-family:var(--read);font-size:16.5px;line-height:1.55;color:var(--ink-2);margin:12px 0 0;max-width:26em}
+.m-close{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;margin-bottom:46px}
+.m-close b{display:block;font-size:20px;font-weight:600;letter-spacing:-.01em}
+.m-close span{color:var(--muted);font-size:14px}
+/* карточка вещи (как карточка парка) */
+.prod .p-hero figure img,.prod .p-hero figure svg{width:100%;max-height:72vh;object-fit:contain;background:#EEEFEC;border-radius:var(--r);display:block}
+.prod .facts{grid-template-columns:repeat(2,1fr)}
+@media(min-width:760px){.prod .facts{grid-template-columns:repeat(4,1fr)}}
+.sizes{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 16px}
+.sizes button{min-width:48px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-family:var(--mono)}
+.sizes button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+table.sz{width:100%;border-collapse:collapse;font-size:14.5px}
+table.sz td,table.sz th{padding:8px 10px 8px 0;border-top:1px solid var(--line);text-align:left}
+table.sz th{font-family:var(--mono);font-size:11px;text-transform:uppercase;color:var(--muted);font-weight:400}
+.demo-note{font-size:13px;color:var(--muted);margin:12px 0 0}
+/* корзина */
+dialog.m-cart{border:1px solid var(--line);border-radius:var(--r);padding:22px 24px 24px;background:var(--surface);color:var(--ink);width:min(560px,calc(100% - 32px));max-height:86vh}
+dialog.m-cart::backdrop{background:rgba(16,24,20,.45);backdrop-filter:blur(3px)}
+.m-cart h2{margin:0 0 6px;font-size:24px;letter-spacing:-.02em}
+.m-cart .x{float:right;width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--bg);cursor:pointer;font-size:18px}
+.crow{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--line);font-size:14.5px}
+.crow small{display:block;color:var(--muted);font-family:var(--mono);font-size:11.5px}
+.crow .q{display:flex;align-items:center;gap:8px;font-family:var(--mono)}
+.crow .q button{width:28px;height:28px;border-radius:8px;border:1px solid var(--line);background:var(--bg);cursor:pointer}
+.ctot{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:14px 0 6px;font-weight:600;font-size:17px}
+.m-toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:11px 20px;border-radius:10px;font-size:14px;z-index:60;opacity:0;pointer-events:none;transition:opacity .2s}
+.m-toast.on{opacity:1}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Атлас геопарков ЮНЕСКО — на главную">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 19 9 6l4 7 3-4 6 10H2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M6.5 19c2-2.5 9-2.5 11 0" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <span>Атлас геопарков § sensesay</span>
+    </a>
+    <nav class="nav" aria-label="Разделы"><a href="../#catalog">Каталог</a><a href="../#oil">Нефть</a><a href="../#devices">Приёмы</a><a href="../pamyatka/">Памятка ЮНЕСКО</a><a href="#top" aria-current="page">Мерч</a></nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Корзина"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="w">Корзина</span> <b>0</b></button>
+    <button class="icon-btn" id="themeBtn" aria-label="Сменить тему">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M5.3 18.7l1.5-1.5M17.2 6.8l1.5-1.5"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap intro">
+    <div class="mono">Мерч · коллекция 001 · 2026</div>
+    <h1 class="m-logo"><img class="lg-l" src="img/logo-shugur.webp" alt="I ♥ SHUGUR" width="1000" height="158"><img class="lg-d" src="img/logo-shugur-dark.webp" alt="I ♥ SHUGUR" width="1000" height="158"></h1>
+    <p class="sub">Вещи для тех, кто смотрит глубже и уносит с собой больше впечатлений.</p>
+    <div class="intro-row">
+      <ul class="nums" id="mNums"></ul>
+      <a class="to-memo" href="#help">Как заказать →</a>
+    </div>
+  </div>
+
+  <section class="cat-sec" aria-label="Коллекции"><div class="wrap">
+    <div class="m-hero" id="mHero" aria-roledescription="карусель">
+      <div class="m-hero-copy"><span class="mono" id="sTag"></span><h2 id="sTitle"></h2><p id="sText"></p><a class="btn pri" href="#merch" id="sLink">Смотреть коллекцию ↓</a></div>
+      <div class="m-hero-art" id="sArt"></div>
+      <div class="m-spec">Geo / objects<br>Коллекция 001 — 2026</div>
+      <div class="m-bar"><div class="m-dots" id="sDots"></div><div class="m-arr"><span id="sNum"></span><button id="sPrev" aria-label="Предыдущий слайд">←</button><button id="sNext" aria-label="Следующий слайд">→</button></div></div>
+    </div>
+    <div class="m-ben">
+      <div><i>↗</i><div><b>Из путешествия — в каждый день</b><span>Одежда, аксессуары и предметы</span></div></div>
+      <div><i>◎</i><div><b>У каждой вещи — своя история</b><span>Вдохновлено геологией и природой</span></div></div>
+      <div><i>⌁</i><div><b>Для себя и близких по духу</b><span>Подарки с чувством места</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="merch" class="cat-sec"><div class="wrap">
+    <div class="sec-head"><h2>С собой, надолго</h2><p id="mCount"></p></div>
+    <div class="m-tools">
+      <div class="chips" id="mCats"></div>
+      <div class="field"><input id="mQ" type="search" placeholder="Найти свою вещь…" aria-label="Найти вещь" autocomplete="off"></div>
+      <div class="field" style="max-width:200px"><select id="mSort" aria-label="Порядок"><option value="default">По умолчанию</option><option value="asc">Сначала дешевле</option><option value="desc">Сначала дороже</option></select></div>
+    </div>
+    <div class="m-grid" id="mGrid"></div>
+  </div></section>
+
+  <section class="m-story"><div class="wrap">
+    <svg viewBox="0 0 600 340" role="img" aria-label="Слои породы"><rect width="600" height="340" fill="#dce1d5"/><path d="M0 130Q120 210 250 110T600 120V340H0Z" fill="#aab7a0"/><path d="M0 165Q100 230 250 155T600 160V340H0Z" fill="#7c8f73"/><path d="M0 200Q140 260 290 180T600 195V340H0Z" fill="#e6d6b5"/><path d="M0 220Q140 280 290 200T600 220V340H0Z" fill="#9a5a12"/><path d="M0 245Q170 305 340 230T600 250V340H0Z" fill="#414c46"/><path d="M0 285Q160 350 350 275T600 290V340H0Z" fill="#183f32"/><g fill="none" stroke="#f9faf7" opacity=".5"><path d="M0 70Q100 130 240 60T600 65"/><path d="M0 85Q100 145 240 75T600 80"/><path d="M0 100Q100 160 240 90T600 95"/></g><text x="28" y="35" fill="#414c46" font-size="11" font-family="monospace">ВРЕМЯ, КОТОРОЕ МОЖНО ПОТРОГАТЬ</text></svg>
+    <div><span class="mono">Сувенир с историей</span><h2>Миллионы лет.<br>На каждый день.</h2><p>Линии гор, слои породы, следы древнего моря. Мы переводим язык Земли в вещи, которые хочется носить, дарить и брать в следующее путешествие.</p><a href="../#catalog">Найти место для нового открытия ↗</a></div>
+  </div></section>
+
+  <section id="help"><div class="wrap">
+    <div class="m-help">
+      <div><span class="mono">Всё просто</span><div class="sec-head" style="margin:10px 0 0"><h2>Хорошие вещи.<br>Понятные условия.</h2></div><p class="lead">Это концепция магазина. Товары, цены и условия представлены для демонстрации; реальные заказы пока не принимаются.</p></div>
+      <div>
+        <details class="acc"><summary>Как заказать?</summary><div class="acc-body"><p>Выберите товар, размер и добавьте его в корзину. В этой версии можно собрать заказ и скачать его список. Оплата и отправка заказа появятся после подключения магазина.</p></div></details>
+        <details class="acc"><summary>Доставка и оплата</summary><div class="acc-body"><p>Планируем курьерскую доставку и пункты выдачи. Стоимость, сроки и способы оплаты будут доступны после запуска продаж.</p></div></details>
+        <details class="acc"><summary>Как выбрать размер?</summary><div class="acc-body"><p>Для футболки: S — обхват груди 88–96 см, M — 96–104 см, L — 104–112 см, XL — 112–120 см. Предварительная сетка для макета; финальные замеры будут у каждого изделия.</p></div></details>
+        <details class="acc"><summary>Обмен и возврат</summary><div class="acc-body"><p>Условия обмена, возврата и контакты продавца будут опубликованы до начала продаж.</p></div></details>
+      </div>
+    </div>
+  </div></section>
+
+  <div class="wrap"><div class="m-close"><div><b>Следующее открытие — рядом.</b><span>Исследуйте атлас. Найдите свой геопарк.</span></div><a class="btn pri" href="../">Открыть атлас ↗</a></div></div>
+</main>
+
+<footer><div class="wrap">
+  <p>Данные о парках — открытый набор ЮНЕСКО (UNESCO DataHub), страницы парков на unesco.org и их собственные сайты, проверка в сентябре — октябре 2026 года. Посещаемость — годовые отчёты парков в Глобальную сеть геопарков, статистика регионов и пресса; источник указан в карточке.</p>
+  <p>Фотографии — Wikimedia Commons, автор и лицензия подписаны под каждым снимком, полный список — на странице <a href="../credits.html">«Авторы фотографий»</a>. Описания и разбор коммуникации написаны для проекта «Геопарк». У 27 парков сайт не работает или не найден — там разбор сделан по тексту, который парк дал ЮНЕСКО, и это помечено.</p>
+  <p>Визуальный код сайтов парков разобран в октябре 2026 года. Самопроверка в <a href="../pamyatka/#check">памятке</a> — наш перевод списка ЮНЕСКО для геопарков-кандидатов.</p>
+  <p>Мерч — концепция магазина: товары, цены и условия показаны для демонстрации, заказы пока не принимаются. Не является публичной офертой.</p>
+</div></footer>
+
+<div class="park prod" id="prod" role="dialog" aria-modal="true" aria-label="Карточка вещи"></div>
+<dialog class="m-cart" id="mCart" aria-label="Корзина"><button class="x" id="mCartX" aria-label="Закрыть">×</button><h2>Ваша корзина</h2><div id="mCartBody"></div></dialog>
+<div class="m-toast" id="mToast" role="status"></div>
+
+<script>
+(function(){
+'use strict';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const root=document.documentElement;
+$('#themeBtn').addEventListener('click',()=>{const cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');const nx=cur==='dark'?'light':'dark';root.setAttribute('data-theme',nx);try{localStorage.setItem('atlas-theme',nx);}catch(e){}});
+const load=k=>{try{return JSON.parse(localStorage.getItem(k)||'[]');}catch(e){return [];}};
+const save=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}};
+
+/* рисунки вещей — из концепции магазина */
+const shell=`<path d="M150 118C104 72 65 101 79 143C89 174 125 196 150 213C175 196 211 174 221 143C235 101 196 72 150 118Z" fill="none" stroke="currentColor" stroke-width="2.3"/><g stroke="currentColor" fill="none" stroke-width="1.3"><path d="M150 207Q115 140 88 117M150 207Q128 139 107 105M150 207Q142 140 130 110M150 207V120M150 207Q158 140 170 110M150 207Q172 139 193 105M150 207Q185 140 212 117"/></g>`;
+function artwork(type,color='#e8e4d8'){let s='';
+if(type==='shirt')s=`<path d="M97 64L59 83 26 139 69 163 89 135V267Q150 283 211 267V135L231 163 274 139 241 83 203 64Q150 89 97 64Z" fill="${color}" stroke="#7e877e" stroke-opacity=".25"/><path d="M119 69Q150 101 181 69" fill="none" stroke="#7e877e" stroke-width="5" opacity=".25"/><g transform="translate(83 87) scale(.45)" color="#315747">${shell}</g><text x="150" y="203" text-anchor="middle" fill="#315747" font-size="9" font-family="monospace">СМОТРИ ГЛУБЖЕ</text><path d="M94 135L91 265M206 135L209 265" stroke="#babeb2" opacity=".4"/>`;
+if(type==='bag')s=`<path d="M104 105V72Q104 26 150 26T196 72V105" fill="none" stroke="#b2a88f" stroke-width="11"/><path d="M75 96H225L238 276Q150 290 62 276Z" fill="${color}" stroke="#c3bca6"/><g transform="translate(45 88) scale(.7)" color="#315747">${shell}</g><text x="150" y="252" text-anchor="middle" font-size="10" fill="#315747" font-family="monospace">ГЛУБЖЕ, ЧЕМ КАЖЕТСЯ</text>`;
+if(type==='cup')s=`<path d="M207 119H231Q267 119 267 161T220 204H207" fill="none" stroke="#a7b4a3" stroke-width="16"/><path d="M65 104H218V223Q141 255 65 223Z" fill="${color}" stroke="#97a18c"/><ellipse cx="141" cy="104" rx="77" ry="17" fill="#e3e6da" stroke="#7c8f73" stroke-width="5"/><ellipse cx="141" cy="104" rx="61" ry="10" fill="#c6cbbd"/><path d="M65 198Q120 173 165 199T218 193" stroke="#697f68" stroke-width="5" fill="none"/><text x="141" y="166" font-size="12" text-anchor="middle" fill="#315747" font-family="monospace">ИСТОЧНИК</text>`;
+if(type==='cap')s=`<path d="M65 178Q62 78 150 73Q231 82 237 184Z" fill="${color}" stroke="#486251"/><path d="M65 178Q156 163 237 184Q225 240 78 217L35 203Z" fill="${color}" stroke="#486251"/><path d="M150 74Q180 115 176 178" fill="none" stroke="#8b9c83"/><g fill="none" stroke="#e0e2ce" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="125" cy="118" r="10"/><path d="M132 126L153 147M143 137L150 130M149 143L156 136"/></g>`;
+if(type==='book')s=`<path d="M74 55L224 66V270L74 258Z" fill="${color}"/><path d="M79 61L86 257" stroke="#acb8a1"/><text x="150" y="106" fill="#e7e5d4" text-anchor="middle" font-family="monospace" font-size="11">ПОЛЕВЫЕ</text><text x="150" y="122" fill="#e7e5d4" text-anchor="middle" font-family="monospace" font-size="11">ЗАМЕТКИ</text><g stroke="#a2b39a" fill="none">${Array.from({length:7},(_,i)=>`<path d="M95 ${170+i*8}Q135 ${140+i*8} 175 ${175+i*8}T207 ${165+i*8}"/>`).join('')}</g>`;
+if(type==='poster')s=`<rect x="54" y="35" width="192" height="252" fill="#d5cbb6"/><rect x="61" y="42" width="178" height="238" fill="#f2f0e5"/><text x="80" y="72" font-family="monospace" font-size="11" fill="#354a3c">Я / В РАЗРЕЗЕ</text>${['#b5c0aa','#82947a','#dccbb0','#9a5a12','#414c46'].map((c,i)=>`<path d="M78 ${125+i*20}Q117 ${80+i*20} 160 ${130+i*20}T222 ${117+i*20}V249H78Z" fill="${c}"/>`).join('')}`;
+if(type==='pin')s=`<g transform="translate(-21 -15) scale(1.15)" color="#9a783e">${shell}</g><g transform="translate(60 100) scale(.5)" color="#315747">${shell}</g>`;
+if(type==='set')s=`<rect x="42" y="82" width="216" height="174" rx="4" fill="#b6a17e"/><path d="M42 110H258M174 82V256" stroke="#96815d"/><rect x="73" y="111" width="72" height="108" fill="#315747"/><text x="109" y="151" text-anchor="middle" fill="#e8e1cd" font-size="8">ЗЕМЛЯ</text><path d="M188 126H231V211H188Z" fill="#e3e5d5"/><path d="M198 82V256" stroke="#e7dec9" stroke-width="12"/>`;
+return `<svg viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">${s}</svg>`;}
+
+const SH='Коллекция I ♥ SHUGUR';
+const P=[
+ {id:'shugur-jacket-1',name:'Куртка SHUGUR · образ 01',cat:'Одежда',desc:SH+' · принт на рукаве',price:12900,type:'shirt',photo:'img/model-1.webp',badge:'SHUGUR'},
+ {id:'shugur-jacket-2',name:'Куртка SHUGUR · образ 02',cat:'Одежда',desc:SH+' · принт на рукаве',price:12900,type:'shirt',photo:'img/model-2.webp',badge:'SHUGUR'},
+ {id:'shugur-top-1',name:'Топ SHUGUR · образ 01',cat:'Одежда',desc:SH+' · принт на груди',price:2900,type:'shirt',photo:'img/model-3.webp',badge:'SHUGUR'},
+ {id:'shugur-top-2',name:'Топ SHUGUR · образ 02',cat:'Одежда',desc:SH+' · принт на груди',price:2900,type:'shirt',photo:'img/model-4.webp',badge:'SHUGUR'},
+ {id:'shugur-top',name:'Топ SHUGUR',cat:'Одежда',desc:SH+' · принт на груди',price:2900,type:'shirt',photo:'img/model-5.webp',badge:'SHUGUR'},
+ {id:'shugur-tee-look',name:'Футболка SHUGUR · образ',cat:'Одежда',desc:SH+' · принт на груди',price:2900,type:'shirt',photo:'img/model-6.webp',badge:'SHUGUR'},
+ {id:'shugur-tee',name:'Футболка SHUGUR',cat:'Одежда',desc:SH+' · принт на груди',price:2900,type:'shirt',photo:'img/model-7.webp',badge:'SHUGUR'},
+ {id:'tee-deeper',name:'Футболка «Смотри глубже»',cat:'Одежда',desc:'Хлопок · молочный',price:2900,type:'shirt',color:'#e8e4d8',badge:'Бестселлер'},
+ {id:'tote-sea',name:'Шопер «Древнее море»',cat:'Аксессуары',desc:'Плотный канвас · натуральный',price:1600,type:'bag',color:'#dfd6be',badge:'Новинка'},
+ {id:'mug-earth',name:'Кружка «Земля зовёт»',cat:'Для дома',desc:'Керамика · шалфейный',price:1800,type:'cup',color:'#b1bda5'},
+ {id:'cap-horizon',name:'Кепка «Новый горизонт»',cat:'Одежда',desc:'Хлопок · лесной зелёный',price:2200,type:'cap',color:'#506b52'},
+ {id:'notebook-field',name:'Блокнот «Полевые заметки»',cat:'Аксессуары',desc:'А5 · 96 страниц',price:950,type:'book',color:'#365743'},
+ {id:'poster-section',name:'Постер «Земля в разрезе»',cat:'Для дома',desc:'А3 · дизайнерская бумага',price:1400,type:'poster',color:'#ddd8c8'},
+ {id:'pins-time',name:'Значки «Следы времени»',cat:'Подарки',desc:'Набор из 2 значков · металл',price:1100,type:'pin',color:'#d6b770',badge:'На память'},
+ {id:'set-expedition',name:'Набор «Начало экспедиции»',cat:'Подарки',desc:'Блокнот, термостакан и открытка',price:3400,type:'set',color:'#aaa'}
+];
+const byId={};P.forEach(p=>byId[p.id]=p);
+const money=n=>n.toLocaleString('ru-RU')+' ₽';
+const art=(p,lazy)=>p.photo?'<img src="'+p.photo+'" alt="'+esc(p.name)+'"'+(lazy?' loading="lazy" decoding="async"':'')+' width="1053" height="1493">':artwork(p.type,p.color);
+const isWear=p=>p.type==='shirt'||p.type==='cap';
+const SIZES=p=>p.type==='shirt'?['S','M','L','XL']:null;
+let favs=load('geo-favs').filter(x=>byId[x]), cart=load('geo-cart').filter(x=>byId[x.id]&&x.qty>0);
+
+/* цифры под логотипом */
+const cats=['Одежда','Аксессуары','Для дома','Подарки'];
+$('#mNums').innerHTML='<li><b>'+P.length+'</b><span>вещей</span></li><li><b>'+cats.length+'</b><span>категории</span></li><li><b>'+P.filter(p=>p.badge==='SHUGUR').length+'</b><span>в коллекции I ♥ SHUGUR</span></li><li><b>2026</b><span>коллекция 001</span></li>';
+
+/* карусель */
+const SL=[['Коллекция 01 / Следы времени','Море ушло.<br>История осталась.','Брахиоподы, пережившие миллионы лет, — теперь на вещах для ваших новых открытий.','shirt','#DCE3D8','Все'],
+ ['Коллекция 02 / В пути','Любопытство<br>всегда с собой.','Для заметок на полях, находок по дороге и маршрутов, которых ещё нет на карте.','bag','#E4DFD1','Аксессуары'],
+ ['Коллекция 03 / Чувство места','Пусть Земля<br>будет ближе.','Небольшие напоминания о больших путешествиях. Для дома и тех, кто вам дорог.','cup','#D6E0D8','Для дома']];
+let si=0;
+function paintSlide(){const s=SL[si];$('#sTag').textContent=s[0];$('#sTitle').innerHTML=s[1];$('#sText').textContent=s[2];$('#sArt').innerHTML=artwork(s[3]);$('#mHero').style.backgroundColor=s[4];$('#sNum').textContent='0'+(si+1)+' / 0'+SL.length;
+  $('#sDots').innerHTML=SL.map((_,i)=>'<button aria-label="Слайд '+(i+1)+'" aria-pressed="'+(i===si)+'" data-i="'+i+'"></button>').join('');}
+$('#sDots').addEventListener('click',e=>{const b=e.target.closest('button');if(b){si=+b.dataset.i;paintSlide();}});
+$('#sPrev').addEventListener('click',()=>{si=(si+SL.length-1)%SL.length;paintSlide();});
+$('#sNext').addEventListener('click',()=>{si=(si+1)%SL.length;paintSlide();});
+$('#sLink').addEventListener('click',()=>{setCat(SL[si][5]);});
+paintSlide();
+
+/* каталог */
+let cat='Все';
+const CH=[['Все','Всё'],['Одежда','Одежда'],['Аксессуары','Аксессуары'],['Для дома','Для дома'],['Подарки','Подарки'],['Избранное','♡ Избранное']];
+$('#mCats').innerHTML=CH.map(([k,l])=>'<button class="chip" data-c="'+k+'" aria-pressed="'+(k===cat)+'">'+l+'</button>').join('');
+$('#mCats').addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(b)setCat(b.dataset.c);});
+function setCat(c){cat=c;document.querySelectorAll('#mCats .chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.c===c));render();}
+$('#mQ').addEventListener('input',render);$('#mSort').addEventListener('change',render);
+let LIST=P.slice();
+function card(p){const f=favs.indexOf(p.id)>=0;return '<article class="m-card"><button class="m-fav" data-fav="'+p.id+'" aria-pressed="'+f+'" aria-label="'+(f?'Убрать из избранного':'В избранное')+'">'+(f?'♥':'♡')+'</button><a class="m-pic" href="#m-'+p.id+'">'+(p.badge?'<span class="tags"><span class="tag'+(p.badge==='SHUGUR'?' sh':'')+'">'+esc(p.badge)+'</span></span>':'')+art(p,true)+'</a><span class="mono">'+esc(p.cat)+'</span><h3><a href="#m-'+p.id+'" style="text-decoration:none">'+esc(p.name)+'</a></h3><p>'+esc(p.desc)+'</p><div class="m-price"><span>'+money(p.price)+'</span><a class="add" href="#m-'+p.id+'" aria-label="Выбрать '+esc(p.name)+'" style="display:grid;place-items:center;text-decoration:none">+</a></div></article>';}
+function render(){const q=$('#mQ').value.trim().toLowerCase();
+  let l=P.filter(p=>(cat==='Все'||p.cat===cat||(cat==='Избранное'&&favs.indexOf(p.id)>=0))&&(p.name+' '+p.desc).toLowerCase().indexOf(q)>=0);
+  const o=$('#mSort').value; if(o!=='default')l.sort((a,b)=>o==='asc'?a.price-b.price:b.price-a.price);
+  LIST=l; const n=l.length; $('#mCount').textContent=n+' '+(n%10===1&&n%100!==11?'вещь':(n%10>=2&&n%10<=4&&(n%100<12||n%100>14))?'вещи':'вещей');
+  $('#mGrid').innerHTML=n?l.map(card).join(''):'<p class="empty" style="grid-column:1/-1">'+(cat==='Избранное'?'В избранном пока пусто: отметьте вещь сердечком.':'Ничего не нашлось. Попробуйте другую категорию или запрос.')+'</p>';}
+$('#mGrid').addEventListener('click',e=>{const b=e.target.closest('[data-fav]');if(!b)return;e.preventDefault();const id=b.dataset.fav;favs=favs.indexOf(id)>=0?favs.filter(x=>x!==id):favs.concat(id);save('geo-favs',favs);render();});
+render();
+
+/* корзина */
+const cartN=()=>cart.reduce((s,x)=>s+x.qty,0);
+function sync(){save('geo-cart',cart);const b=$('#cartBtn b');if(b)b.textContent=cartN();}
+let tt;function toast(t){const e=$('#mToast');e.textContent=t;e.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>e.classList.remove('on'),2200);}
+function add(id,size){const r=cart.find(x=>x.id===id&&x.size===size);if(r)r.qty++;else cart.push({id,size,qty:1});sync();toast('Добавлено в корзину');}
+function paintCart(){const tot=cart.reduce((s,x)=>s+x.qty*byId[x.id].price,0);
+  $('#mCartBody').innerHTML=cart.length?cart.map((x,i)=>'<div class="crow"><div>'+esc(byId[x.id].name)+'<small>'+esc(x.size)+'</small></div><div class="q"><button data-d="-1" data-i="'+i+'" aria-label="Меньше">−</button>'+x.qty+'<button data-d="1" data-i="'+i+'" aria-label="Больше">+</button></div><span>'+money(byId[x.id].price*x.qty)+'</span></div>').join('')+'<div class="ctot"><span>Итого</span><span>'+money(tot)+'</span></div><p class="demo-note">Демонстрационная корзина. Покупка и оплата пока недоступны.</p><button class="btn pri" id="mDl" style="margin-top:12px">Скачать список покупок ↓</button>':'<p class="empty" style="text-align:left;padding:18px 0">Пока пусто. Самое время найти свою вещь.</p>';}
+$('#mCartBody').addEventListener('click',e=>{const b=e.target.closest('[data-d]');if(b){const i=+b.dataset.i;cart[i].qty+=+b.dataset.d;cart=cart.filter(x=>x.qty>0);sync();paintCart();return;}
+  if(e.target.id==='mDl'){const tot=cart.reduce((s,x)=>s+x.qty*byId[x.id].price,0);const txt='Атлас геопарков § sensesay — список покупок (демо)\n\n'+cart.map(x=>byId[x.id].name+' / '+x.size+' × '+x.qty+' — '+money(byId[x.id].price*x.qty)).join('\n')+'\n\nИтого: '+money(tot)+'\n';const u=URL.createObjectURL(new Blob([txt],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=u;a.download='geo-shopping-list.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);}});
+const dlg=$('#mCart');
+function openCart(){paintCart();if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');}
+$('#cartBtn').addEventListener('click',openCart);
+$('#mCartX').addEventListener('click',()=>dlg.close());
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+sync();
+
+/* карточка вещи — как карточка парка */
+const prod=$('#prod');let cur=null,size=null,fromApp=false;
+const fact=(l,v,s)=>'<div class="fact"><span class="mono">'+l+'</span><b>'+v+'</b>'+(s?'<small>'+s+'</small>':'')+'</div>';
+function openProd(p){cur=p;const sz=SIZES(p);size=sz?'M':(isWear(p)?'Единый':'Единый');
+  const list=LIST.indexOf(p)>=0?LIST:P;const i=list.indexOf(p),prev=list[(i-1+list.length)%list.length],next=list[(i+1)%list.length];
+  const sh=p.badge==='SHUGUR';
+  prod.innerHTML='<div class="park-bar"><div class="wrap"><button class="back" id="pBack"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>К мерчу</button><span class="mono">'+esc(p.cat)+(sh?' · I ♥ SHUGUR':'')+'</span><div class="sp"><a class="icon-btn" href="#m-'+prev.id+'" aria-label="Предыдущая вещь" style="text-decoration:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></a><a class="icon-btn" href="#m-'+next.id+'" aria-label="Следующая вещь" style="text-decoration:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></a></div></div></div>'+
+  '<div class="wrap">'+
+   '<div class="p-hero"><div><span class="mono">'+esc(sh?SH:'Мерч · коллекция 001')+'</span><h1>'+esc(p.name)+'</h1><div class="en">'+esc(p.desc)+'</div><p class="lead">Авторская графика, вдохновлённая геологией. Концептуальный образец коллекции.</p></div><figure>'+art(p,false)+'</figure></div>'+
+   '<div class="facts">'+fact('Цена',money(p.price),'демонстрационная')+fact('Категория',esc(p.cat),'')+fact('Размер',sz?'S — XL':'Единый','размер / формат')+fact('Коллекция',sh?'I ♥ SHUGUR':'001','2026')+'</div>'+
+   '<div class="p-cols"><div>'+
+     '<div class="block"><h2>Выбрать</h2>'+(sz?'<div class="sizes" id="pSizes">'+sz.map(s=>'<button data-s="'+s+'" aria-pressed="'+(s===size)+'">'+s+'</button>').join('')+'</div>':'<p class="prose" style="margin:0 0 14px">Единый размер / формат</p>')+
+       '<button class="btn pri" id="pAdd">Добавить в корзину +</button><p class="demo-note">Это концепция магазина: корзину можно собрать и скачать списком, оплата пока не подключена.</p></div>'+
+     '<div class="block"><h2>Доставка и оплата</h2><div class="prose"><p>Планируем курьерскую доставку и пункты выдачи. Стоимость, сроки и способы оплаты будут доступны после запуска продаж.</p></div></div>'+
+   '</div><div>'+
+     (sz?'<div class="block"><h2>Размерная сетка</h2><table class="sz"><tr><th>Размер</th><th>Обхват груди</th></tr><tr><td>S</td><td>88–96 см</td></tr><tr><td>M</td><td>96–104 см</td></tr><tr><td>L</td><td>104–112 см</td></tr><tr><td>XL</td><td>112–120 см</td></tr></table><p class="demo-note">Предварительная сетка для макета; финальные замеры будут у каждого изделия.</p></div>':'')+
+     '<div class="block"><h2>Обмен и возврат</h2><div class="prose"><p>Условия обмена, возврата и контакты продавца будут опубликованы до начала продаж.</p></div></div>'+
+   '</div></div>'+
+   '<div class="p-nav"><a href="#m-'+prev.id+'"><span class="mono">Назад</span><b>'+esc(prev.name)+'</b></a><a href="#m-'+next.id+'"><span class="mono">Дальше</span><b>'+esc(next.name)+'</b></a></div>'+
+  '</div>';
+  prod.classList.add('on');root.style.overflow='hidden';prod.scrollTop=0;document.title=p.name+' — Мерч — Атлас геопарков ЮНЕСКО';
+  $('#pBack').addEventListener('click',closeProd);
+  const ps=$('#pSizes');if(ps)ps.addEventListener('click',e=>{const b=e.target.closest('[data-s]');if(!b)return;size=b.dataset.s;ps.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));});
+  $('#pAdd').addEventListener('click',()=>add(p.id,size));
+}
+const TITLE=document.title;
+function closeProd(){if(!fromApp){location.hash='merch';return;}try{history.replaceState(null,'',location.pathname+location.search);}catch(e){location.hash='merch';return;}route();}
+function route(){const h=decodeURIComponent(location.hash.slice(1));if(h.indexOf('m-')===0&&byId[h.slice(2)]){openProd(byId[h.slice(2)]);}else if(prod.classList.contains('on')){prod.classList.remove('on');prod.innerHTML='';root.style.overflow='';cur=null;document.title=TITLE;}}
+addEventListener('hashchange',()=>{fromApp=true;route();});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&cur&&!(dlg.open))closeProd();});
+route();
+})();
+</script>
+</body>
+</html>
